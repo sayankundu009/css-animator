@@ -1,0 +1,118 @@
+.form-control::placeholder{
+    color: #b5b5b5;
+}
+
+.app-section-container{
+    height: calc(100vh - 220px);
+}
+
+.app-toolbar-container{
+    height: 40px;
+}
+
+.app-timeline-container{
+    height: 120px;
+}
+
+.app-form-section{
+    overflow: hidden;
+}
+
+.app-form-input-section{
+    overflow-y: auto;
+    height: 415px;
+}
+
+.app-form-input-section::-webkit-scrollbar {
+    display: none;
+}
+
+.app-target-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+#target-element{
+    color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: 65px;
+    transform-origin: center center;
+    text-align: center;
+    transition: .2s;
+}
+#target-element i{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.app-timeline {
+    margin: 10px 20px;
+    height: 86%;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0s ease;
+    width: 95%;
+    background-color: #191919;
+}
+
+.app-timeline-marker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 12px;
+    position: absolute;
+    margin-left: -6px;
+    top: 0;
+    z-index: 10;
+    border-radius: 2px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.app-timeline-marker span {
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    text-align: center;
+    width: 30px;
+    height: 24px;
+    border-radius: 2px;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.app-timeline-marker.current {
+    background-color: #1266f1;
+}
+
+.app-timeline-marker.step {
+    background-color: #fff;
+}
+
+.app-timeline-marker.new {
+    background-color: #20c997;
+}
+
+.app-timeline-marker.current span {
+    color: #fff;
+    background-color: #1266f1;
+}
+
+.app-timeline-marker.step span {
+    color: #191919;
+    background-color: #fff;
+}
+
+.app-timeline-marker.new span {
+    color: #191919;
+    background-color: #20c997;
+}
